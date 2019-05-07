@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Print middle letter/letters of a ward</p>
+    <p id="demo"></p>
+    <script>
+        var a = prompt("Write a word :")
+     //   console.log(lengthOfStr)
+        //function midNum() {
+            var lengthOfStr = a.length;
+
+            if (lengthOfStr % 2 == 0) {
+                half = lengthOfStr / 2
+                console.log(half)
+                document.getElementById("demo").innerHTML = (a[half - 1] + a[half])
+                console.log(a[half - 1], a[half])
+            } else if (lengthOfStr % 2 != 0) {
+                half = lengthOfStr / 2
+                console.log(half)
+                half = Math.round(half)
+                console.log(half)
+                document.getElementById("demo").innerHTML = (a[half - 1])
+                console.log(a[half-1])
+            }
+
+       // }
+    </script>
+</body>
+
+</html>
